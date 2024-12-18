@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-image: url('stars.jpg');
+            overflow: hidden;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .text {
+            width: 40%;
+            padding: 2em;
+            text-align: center;
+        }
+        .container {
+            font-size: 15px;
+            width: 40em;
+            height: 40em;
+            position: relative;
+            margin-right: 10em;
+        }
+        .sun {
+            position: absolute;
+            top: 15em;
+            left: 15em;
+            width: 10em;
+            height: 10em;
+            border-radius: 50%;
+            animation: rotate 10s linear infinite;
+        }
+        .earth, .moon {
+            position: absolute;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+            border-width: 0.1em 0.1em 0 0;
+            border-radius: 50%;
+        }
+        .earth {
+            top: 5em;
+            left: 5em;
+            width: 30em;
+            height: 30em;
+            animation: orbit 5s linear infinite;
+        }
+        .moon {
+            top: 0;
+            right: 0;
+            width: 8em;
+            height: 8em;
+            animation: orbit 2s linear infinite;
+        }
+        .earth img, .moon img, .sun img {
+            position: absolute;
+            border-radius: 50%;
+        }
+        .earth img {
+            top: 2.8em;
+            right: 2.8em;
+            width: 3em;
+            height: 3em;
+        }
+        .moon img {
+            top: 0.8em;
+            right: 0.2em;
+            width: 1.2em;
+            height: 1.2em;
+        }
+        .sun img {
+            width: 100%;
+            height: 100%;
+        }
+        @keyframes orbit {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes rotate {
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+        .h1 {
+        center
+        }
+     </style>
+    <body>
+        <div class="text">
+            <h1>Come to My page!</h1>
+            <h2>Heres the Link:</h2>
+            <h1><a href="https://nizamyep.github.io/Personal-Biodata/index.html">Nizam's Personal Biodata</a></h1>
+        </div>
+        <div class="container">
+            <div class="sun">
+                <img src="dasun.png" alt="Sun">
+            </div>
+            <div class="earth">
+                <img src="laearth.jpg" alt="Earth">
+                <div class="moon">
+                    <img src="lemoon.jpg" alt="Moon">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
